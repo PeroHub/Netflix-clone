@@ -1,0 +1,438 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    background-image: url("https://assets.nflxext.com/ffe/siteui/vlv3/7a33204b-893d-4792-8494-b9d6cbc73848/40ac467e-7fcd-4507-80be-06b66d80eb62/NG-en-20210502-popsignuptwoweeks-perspective_alpha_website_small.jpg");
+    background-size: cover;
+    background-position: center;
+    min-height: 100%;
+    height: 800px;
+    -moz-box-shadow: inset 10px 10px 500px #000;
+    -webkit-box-shadow: inset 100px 10px 900px #000;
+    box-shadow: inset 100px 10px 500px #000;
+    box-shadow: inset 150px 100px 900px 50px #000;
+}
+
+/* .head-container
+.head-content {
+    display: flex;
+    justify-content: space-between;
+} */
+
+.head-container
+.head-content h3 {
+    color: #E50914;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.head-container
+.head-content
+.resize {
+    /* margin: 30px 0 0 100px; */
+    /* border: 1px solid red; */
+    position: relative;
+    top: 30px;
+    left: 60px;
+    width: 200px;
+    height: 50px;
+    
+}
+
+.head-container .head-content button {
+    position: relative;
+    top: 30px;
+    right: 100px;
+}
+
+.head-container
+.head-content button {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    font-size: 17px;
+    align-items: center;
+    padding: .5rem;
+    width: 100px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    background-color: #E50914;
+    color: #fff;
+}
+
+/* Unlimited movie section */
+.head-container
+.content {
+    text-align: center; 
+    max-width: 45%;
+    margin: 0 auto;
+    position: relative;
+    top: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.head-container
+.content > h1{
+    color: #fff;
+    
+}
+
+.head-container
+.content > h3 {
+    color: #fff;
+}
+
+.head-container
+.content > p {
+    color: #fff;
+}
+
+.head-container
+.content h1 {
+    font-size: 3.5rem; 
+    width: 700px;
+}
+
+.head-container
+.content h3 {
+    font-size: 20px;
+    padding-bottom: 30px;
+    position: relative;
+    right: 50px;
+    
+}
+
+.head-container
+.content p {
+    font-size: 20px; 
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.head-container
+.content > div {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.head-container
+.content input {
+    padding: 1.6rem;
+    width: 550px;
+    position: inherit;
+}
+
+.head-container
+.content input:focus {
+    outline: none;
+
+}
+
+.head-container
+.content button {
+    padding: 1.5rem;
+    position: inherit;
+    top: 3px;
+    right: 5px;
+    height: 70px;
+    width: 200px;
+    font-size: 20px;
+    background-color: #E50914;
+    color: #fff;
+    border: 1px solid transparent; 
+}
+
+.head-container
+.content
+.reshape {
+    position: absolute;
+    left: 70px;
+}
+
+/* Unlimited movie section */
+
+@media only screen  and (max-width: 460px) {
+    .head-container
+    .head-content
+    .resize {
+        width: 100px;
+        height: 50px;
+    }
+
+    /* header{
+        background-position: center;
+        background-size: cover;
+        background-repeat: repeat;
+    } */
+
+    .head-container
+    .content {
+        max-width: 100%;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .head-container
+    .content h3 {
+        font-size: .8rem;
+        width: 300px;
+        margin-top: 20px;
+        left: 1%;
+        font-weight: normal;
+    }
+
+    .head-container
+    .content h1{
+        width: 70%;
+        font-size: 1.2rem;
+    }
+
+    .head-container
+    .content p {
+        font-size: .8rem;
+        width: 270px;
+        position: relative;
+        font-weight: normal;
+ 
+    }
+
+    .head-container
+    .content input {
+        padding: 1rem;
+        width: 90%;
+    }
+
+    .head-container
+    .content button {
+        font-size: 15px;
+        height: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 35%;
+        margin-top: 10px;
+    }
+
+    .head-container
+    .content
+    .reshape {
+        height: 15px;
+        top: 20px;
+        left: 20px;
+    }
+
+    .head-container 
+    .head-content button {
+        padding: .2rem;
+        width: 70px;
+        right: 5%;
+        top: 6%;
+    }
+
+    
+}
+
+@media only screen and (max-width: 760px) {
+    /* header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    } */
+
+    .head-container
+    .content h1 {
+        font-size: 3rem;
+    }
+
+    .head-container
+    .content h3 {
+        width: 400px;
+        left: 2%;
+    }
+
+    .head-container
+    .content p {
+        width: 450px;
+        margin-top: -10px;
+    }
+
+    .head-container
+    .content input {
+        width: 500px;
+        padding: 1rem;
+    }
+    
+    .head-container
+    .content button {
+        margin-top: 10px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 15px;
+    }
+
+    .head-container
+    .content
+    .reshape {
+        height: 20px;
+    }
+
+    .head-container
+    .head-content
+    .resize {
+        height: 50px;
+        width: 100px;
+        position: relative;
+        top: 20px;
+        left: 70px;
+    }
+
+    .head-container
+    .head-content
+    .button {
+        position: relative;
+        right: 100px;
+        top: 10px;
+    }
+}
+
+/* MAIN Section Design */
+
+main {
+    background-color: black;
+    text-align: center;
+    
+}
+.main-content {
+    border-top: 5px solid #4e4b4b66;
+    border-bottom: 5px solid #4e4b4b66;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+}
+
+.main-content  h3, p, h2 {
+    color: #fff;
+}
+
+.main-content  h3 {
+    font-size: 3rem;
+}
+
+.main-content  p {
+    font-size: 1.5rem;
+    /* width: 55%; */
+}
+
+
+.main-content 
+.main-content-image img {
+    width: 500px;
+}
+
+.main-content
+.main-content-text {
+    width: 35%;
+    margin: 0 120px 0 0;
+}  
+
+.main-content
+.retourch {
+    margin: 0 0 0 120px;
+}
+
+.frequent {
+    text-align: center;
+    margin:  100px 0 0 0;
+}
+
+.frequent h2 {
+    margin-bottom: 50px;
+    font-size: 3rem;
+}
+
+.frequent 
+.frequent-ques {
+    border:  1px solid #303030;
+    background-color: #303030;
+    width: 50%;
+    padding: 30px;
+    margin:  0 auto;
+    margin-top: 10px;
+    text-align: justify;
+    position: relative;
+    left: 10px;
+    display: flex;
+    justify-content:  space-between;
+
+}
+
+.frequent 
+.frequent-ques p {
+    font-size: 1.7rem;
+    
+}
+
+.frequent .icon  {
+    color: #fff;
+    font-size: 30px;
+    
+}
+
+.frequent p {
+    color: #fff;
+}
+
+.frequent{
+    display: flex;
+    flex-direction: column;
+}
+
+main .box {
+    border: 1px solid red;
+    padding-top: 50px;
+    padding-bottom: 5%;
+    
+}
+
+.box p {
+    font-size: 1.2rem;
+    margin-bottom: 12px;
+}
+
+.box input {
+    padding: 1.6rem;
+    width: 550px;   
+}
+
+.box button {
+    padding: 1.5rem;
+    position: relative;
+    top: 3px;
+    right: 5px;
+    height: 70px;
+    width: 200px;
+    font-size: 20px;
+    background-color: #E50914;
+    color: #fff;
+    border: 1px solid transparent; 
+}
+
