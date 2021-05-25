@@ -70,6 +70,11 @@ header {
     color: #fff;
 }
 
+.head-container
+.head-content button:hover{
+    cursor: pointer;
+}
+
 /* Unlimited movie section */
 .head-container
 .content {
@@ -154,6 +159,11 @@ header {
     background-color: #E50914;
     color: #fff;
     border: 1px solid transparent; 
+}
+
+.head-container
+.content button:hover{
+    cursor: pointer;
 }
 
 .head-container
@@ -247,17 +257,35 @@ header {
 }
 
 @media only screen and (max-width: 760px) {
-    /* header {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+    .head-container
+    .head-content
+    .resize {
+        width: 20px;
+        height: 50px;
+        
+    }
 
-    } */
+    .head-container
+    .head-content button {
+        position: absolute;
+        left: 80%;
+        margin-top: -35px;
+        
+    }
 
     .head-container
     .content h1 {
         font-size: 3rem;
+    }
+
+    .main-content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main-content  h3 {
+        color: red;
+        font-size: 12px;
     }
 
     .head-container
@@ -289,10 +317,20 @@ header {
     }
 
     .head-container
+    .content div {
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .head-container
     .content
     .reshape {
-        height: 20px;
+        height: 15px;
+        left: 35%;
     }
+
+    
 
     .head-container
     .head-content
@@ -306,10 +344,14 @@ header {
 
     .head-container
     .head-content
-    .button {
+    button {
         position: relative;
         right: 100px;
         top: 10px;
+    }
+
+    .main-content  h3{
+        font-size: 10px;
     }
 }
 
@@ -362,6 +404,7 @@ main {
 .frequent {
     text-align: center;
     margin:  100px 0 0 0;
+    
 }
 
 .frequent h2 {
@@ -391,10 +434,19 @@ main {
     
 }
 
+.frequent 
+.frequent-ques p:hover {
+    cursor: pointer;
+}
+
 .frequent .icon  {
     color: #fff;
     font-size: 30px;
-    
+
+}
+
+.frequent .icon:hover {
+    cursor: pointer;
 }
 
 .frequent p {
@@ -407,9 +459,9 @@ main {
 }
 
 main .box {
-    border: 1px solid red;
     padding-top: 50px;
     padding-bottom: 5%;
+    border-bottom: 8px solid #4e4b4b66;
     
 }
 
@@ -436,3 +488,288 @@ main .box {
     border: 1px solid transparent; 
 }
 
+/* FOOTER SECTION DESIGN */
+
+ footer {
+    background: black;
+    padding: 70px;
+} 
+
+.footer-section {
+    display: flex;
+    width: 62%;
+    margin: 0 auto;
+    justify-content: space-between;
+    height: 40vh;
+    padding: 30px;
+}
+
+.footer-section
+.footer-content {
+    padding: 20px;
+}
+
+.footer-section
+.footer-content > p {
+    margin-top: 15px;
+    font-size: 14px;
+    color: rgb(199, 198, 198);
+}
+
+.footer-section
+.footer-content > p:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.footer-section
+.foot-con p:first-child {
+    font-size: 17px;
+    position: relative;
+    top: -15px;
+    
+}
+
+.footer-section
+.foot-con p:last-child {
+    position: relative;
+    top: 30px;
+    font-size: 17px;
+}
+
+.footer-section
+.res-po  {
+    position: relative;
+    padding-top: 60px;
+}
+
+
+
+
+/* Mobile View Design Of 375px  */
+
+@media only screen and (max-width: 375px) {
+    header{
+        height: 500px;
+    }
+
+    .head-container
+    .head-content
+    .resize {
+        position: relative;
+        left: 5%;
+        top: 25px;
+        height: 25px;   
+    }
+
+    .head-container
+    .head-content button {
+        position: relative;
+        left: 72%;
+        top: 25px;
+        width: 60px;
+        font-size: 14px;
+    }
+
+    .head-container
+    .content {
+        top: 90px;
+        text-align: center;
+    }
+
+    .head-container
+    .content > h1 {
+        font-size: 1.5rem;
+    }
+
+    .head-container
+    .content > h3 {
+        font-size: .9rem;
+
+    }
+
+    .head-container
+    .content > p {
+        width: 70%;
+        font-size: .9rem;
+    }
+
+    .head-container
+    .content input {
+        width: 330px;
+        height: 40px;
+    }
+
+    .head-container
+    .content button {
+        width: 150px; 
+        height: 40px;
+        padding: 0 0 0 0px; 
+        text-align: center;
+        
+    }
+
+    .head-container
+    .content .reshape {
+        position: relative;
+        top: -25px;
+        left: 15%;
+        height: 12px;
+        width: 50px;    
+    }
+
+    /* Main Section */
+
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    .main-content
+    .main-content-text {
+        margin: 0 auto;
+        width: 85%;
+    }
+
+    .main-content
+    .main-content-text > h3 {
+        font-size: 1.4rem;
+        margin-bottom: 15px; 
+    }
+
+    .main-content
+    .main-content-text > p {
+        font-size: 1rem;  
+    }
+
+    .main-content
+    .main-content-image
+    .image1 {
+        width: 350px;
+    }
+
+    .main-content
+    .main-content-image
+    .image2 {
+        width: 350px;
+    }
+
+    .main-content
+    .retourch {
+        margin-top: 30px;
+        
+    }
+
+    .main-content 
+    .re-add {
+        width: 83%;
+        position: relative;
+        right: 3%;
+    }
+
+    .main-content
+    .main-content-image
+    .image3 {
+        width: 350px;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+
+    .main-content
+    .main-content-image
+    .image4 {
+        width: 350px;
+    }
+
+    .frequent h2 {
+        font-size: 1.5rem;
+        width: 60%;
+        margin: 0 auto;
+        margin-top: -15px;
+        
+        
+    }
+
+    .frequent
+    .frequent-ques {
+        width: 410px;
+        height: 5px;
+        margin: 0 auto;
+        margin-top: 10px;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+    }
+
+    .frequent
+    .frequent-ques p {
+        font-size: 1rem;
+        
+    }
+
+    .frequent
+    .frequent-ques .icon {
+        position: relative;
+        left: 25%;
+        font-size: 1.5rem;
+    }
+
+    .frequent
+    .frequent-ques 
+    .icon1 {
+        left: 56%;
+    }
+
+    .frequent
+    .frequent-ques 
+    .icon3 {
+        left: 44%;
+    }
+
+    .frequent
+    .frequent-ques 
+    .icon4 {
+        left: 47%;
+    }
+
+    .frequent
+    .frequent-ques 
+    .icon6 {
+        left: 38%;
+    }
+
+   
+    .box p {
+        font-size: 1rem;
+        width: 80%;
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+
+    .box input {
+        width: 330px;
+        height: 30px;
+    }
+
+    .box button {
+        width: 150px; 
+        height: 40px;
+        padding: 0 0 0 0px; 
+        text-align: center;
+        font-size: 1rem;
+        margin-top: 10px;
+        margin-bottom: 40px;
+    }
+
+    footer {
+        height:230vh;
+    }
+
+    .footer-section {
+        flex-direction: column;
+    }
+
+}
