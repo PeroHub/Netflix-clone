@@ -773,3 +773,71 @@ main .box {
     }
 
 }
+
+@media only screen and (max-width: 337px) {
+    .head-container
+    .content > p {
+        width: 80%;
+    }
+
+    .head-container
+    .content input {
+        width: 300px;
+    }
+
+    .frequent
+    .frequent-ques {
+        width: 290px;
+        position: relative;
+        left: -2px;
+    }
+
+    .box input {
+        width: 300px;
+    }
+
+    .frequent
+    .frequent-ques p {
+        position: relative;
+        right: 20px;
+        word-spacing: normal;
+    }
+
+    .frequent
+    .frequent-ques .icon1 {
+        position: absolute;
+        left: 90%;
+    }
+
+    .frequent
+    .frequent-ques .icon2 {
+        position: absolute;
+        left: 90%;
+    }
+
+    .frequent
+    .frequent-ques .icon3 {
+        position: absolute;
+        left: 90%;
+    }
+
+    .frequent
+    .frequent-ques .icon4 {
+        position: absolute;
+        left: 90%;
+    }
+
+    .frequent
+    .frequent-ques .icon5 {
+        position: absolute;
+        left: 90%;
+    }
+
+    .frequent
+    .frequent-ques .icon6 {
+        position: absolute;
+        left: 90%;
+    }
+
+    
+}
