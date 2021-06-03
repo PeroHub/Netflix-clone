@@ -9,6 +9,9 @@
 
 body {
     font-family: 'Poppins', sans-serif;
+    margin: auto;
+    overflow: auto;
+    overflow-x: hidden;
 }
 
 header {
@@ -175,185 +178,6 @@ header {
 
 /* Unlimited movie section */
 
-@media only screen  and (max-width: 460px) {
-    .head-container
-    .head-content
-    .resize {
-        width: 100px;
-        height: 50px;
-    }
-
-    /* header{
-        background-position: center;
-        background-size: cover;
-        background-repeat: repeat;
-    } */
-
-    .head-container
-    .content {
-        max-width: 100%;
-        padding-top: 20px;
-        padding-bottom: 20px;
-    }
-
-    .head-container
-    .content h3 {
-        font-size: .8rem;
-        width: 300px;
-        margin-top: 20px;
-        left: 1%;
-        font-weight: normal;
-    }
-
-    .head-container
-    .content h1{
-        width: 70%;
-        font-size: 1.2rem;
-    }
-
-    .head-container
-    .content p {
-        font-size: .8rem;
-        width: 270px;
-        position: relative;
-        font-weight: normal;
- 
-    }
-
-    .head-container
-    .content input {
-        padding: 1rem;
-        width: 90%;
-    }
-
-    .head-container
-    .content button {
-        font-size: 15px;
-        height: 10px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 35%;
-        margin-top: 10px;
-    }
-
-    .head-container
-    .content
-    .reshape {
-        height: 15px;
-        top: 20px;
-        left: 20px;
-    }
-
-    .head-container 
-    .head-content button {
-        padding: .2rem;
-        width: 70px;
-        right: 5%;
-        top: 6%;
-    }
-
-    
-}
-
-@media only screen and (max-width: 760px) {
-    .head-container
-    .head-content
-    .resize {
-        width: 20px;
-        height: 50px;
-        
-    }
-
-    .head-container
-    .head-content button {
-        position: absolute;
-        left: 80%;
-        margin-top: -35px;
-        
-    }
-
-    .head-container
-    .content h1 {
-        font-size: 3rem;
-    }
-
-    .main-content {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .main-content  h3 {
-        color: red;
-        font-size: 12px;
-    }
-
-    .head-container
-    .content h3 {
-        width: 400px;
-        left: 2%;
-    }
-
-    .head-container
-    .content p {
-        width: 450px;
-        margin-top: -10px;
-    }
-
-    .head-container
-    .content input {
-        width: 500px;
-        padding: 1rem;
-    }
-    
-    .head-container
-    .content button {
-        margin-top: 10px;
-        height: 50px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 15px;
-    }
-
-    .head-container
-    .content div {
-        flex-direction: column;
-        align-items: center;
-    }
-
-
-    .head-container
-    .content
-    .reshape {
-        height: 15px;
-        left: 35%;
-    }
-
-    
-
-    .head-container
-    .head-content
-    .resize {
-        height: 50px;
-        width: 100px;
-        position: relative;
-        top: 20px;
-        left: 70px;
-    }
-
-    .head-container
-    .head-content
-    button {
-        position: relative;
-        right: 100px;
-        top: 10px;
-    }
-
-    .main-content  h3{
-        font-size: 10px;
-    }
-}
 
 /* MAIN Section Design */
 
@@ -765,79 +589,174 @@ main .box {
     }
 
     footer {
-        height:230vh;
+        height:200vh;
+    }
+
+    .footer-section {
+        height: 100%;
+        width: 100%;
     }
 
     .footer-section {
         flex-direction: column;
     }
 
+    .footer-section
+    .res-po {
+        top: -90px;
+        padding-top: 0;
+        
+    }
+
+    .footer-section
+    .evenly {
+        position: relative;
+        top: -150px;
+        border: 1px solid red;
+        margin-bottom: 10px;
+    }
+
 }
 
-@media only screen and (max-width: 337px) {
+
+@media only screen and (max-width: 800px) {
     .head-container
-    .content > p {
-        width: 80%;
+    .head-content
+    .resize {
+        width: 20px;
+        height: 50px;
+        
+    }
+
+    .head-content
+    .content > div {
+        /* display: flex;
+        flex-direction: column; */
+        display: block;
+        border: 1px solid red;
+    }
+
+    .head-container
+    .head-content button {
+        position: absolute;
+        left: 80%;
+        margin-top: -35px;
+        
+    }
+
+    .head-container
+    .content h1 {
+        font-size: 3rem;
+    }
+
+    .head-container
+    .content h3 {
+        font-size: 1.2rem;
+    }
+
+    .head-container
+    .content p {
+        font-size: 1rem;
+    }
+
+    .main-content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    
+
+    .main-content
+    .main-content-text {
+        width: 600px;
+        position: relative;
+        left: 10%;
+    }
+
+    .main-content
+    .main-content-text h3 {
+        font-size: 2rem;
+        
+    }
+
+    .main-content
+    .main-content-text p {
+        font-size: 1.2rem;
+    }
+
+    .head-container
+    .content h3 {
+        width: 400px;
+        left: 2%;
+    }
+
+    .main-content
+    .retourch {
+        position: relative;
+        left: -50px;
+        margin-top: 30px;
+        
+    }
+
+    .head-container
+    .content p {
+        width: 450px;
+        margin-top: -10px;
     }
 
     .head-container
     .content input {
-        width: 300px;
+        width: 500px;
+        padding: 1rem;
+    }
+    
+    .head-container
+    .content button {
+        margin-top: 10px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 15px;
     }
 
-    .frequent
-    .frequent-ques {
-        width: 290px;
-        position: relative;
-        left: -2px;
+    .head-container
+    .content div {
+        flex-direction: column;
+        align-items: center;
     }
 
-    .box input {
-        width: 300px;
-    }
 
-    .frequent
-    .frequent-ques p {
-        position: relative;
-        right: 20px;
-        word-spacing: normal;
-    }
-
-    .frequent
-    .frequent-ques .icon1 {
-        position: absolute;
-        left: 90%;
-    }
-
-    .frequent
-    .frequent-ques .icon2 {
-        position: absolute;
-        left: 90%;
-    }
-
-    .frequent
-    .frequent-ques .icon3 {
-        position: absolute;
-        left: 90%;
-    }
-
-    .frequent
-    .frequent-ques .icon4 {
-        position: absolute;
-        left: 90%;
-    }
-
-    .frequent
-    .frequent-ques .icon5 {
-        position: absolute;
-        left: 90%;
-    }
-
-    .frequent
-    .frequent-ques .icon6 {
-        position: absolute;
-        left: 90%;
+    .head-container
+    .content
+    .reshape {
+        height: 15px;
+        left: 35%;
     }
 
     
+
+    .head-container
+    .head-content
+    .resize {
+        height: 50px;
+        width: 100px;
+        position: relative;
+        top: 20px;
+        left: 70px;
+    }
+
+    .head-container
+    .head-content
+    button {
+        position: relative;
+        right: 100px;
+        top: 10px;
+    }
+
+    .main-content  h3{
+        font-size: 10px;
+    }
 }
+
+
