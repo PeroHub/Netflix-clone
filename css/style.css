@@ -11,6 +11,7 @@ body {
     font-family: 'Poppins', sans-serif;
     margin: auto;
     overflow: auto;
+    overflow-x: hidden;
 }
 
 header {
